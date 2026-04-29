@@ -1,0 +1,34 @@
+[
+  {
+    "name": "王师傅",
+    "phone": "13800001111",
+    "is_verified": true,
+    "category": "开锁,换锁,修锁,通下水道,修电路",
+    "is_top": false,
+    "photo": "wang.png"
+  },
+  {
+    "name": "赵师傅",
+    "phone": "13800001111",
+    "is_verified": false,
+    "category": "修电路",
+    "is_top": false,
+    "photo": "wang.png"
+  },
+  {
+    "name": "刘师傅",
+    "phone": "13800001111",
+    "is_verified": true,
+    "category": "通下水道,修电路",
+    "is_top": false,
+    "photo": "wang.png"
+  },
+  {
+    "name": "丁师傅",
+    "phone": "13800001111",
+    "is_verified": false,
+    "category": "开锁",
+    "is_top": false,
+    "photo": "wang.png"
+  }
+]

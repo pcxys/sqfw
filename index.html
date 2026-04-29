@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活服务 - 师傅联系表</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- 2. 引入你刚刚创建的自定义 CSS 文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- 顶部标题 -->
+    <header class="header-bg text-center py-4 shadow-sm">
+        <h2 class="fw-bold mb-0">生活服务热线</h2>
+        <p class="small opacity-75 mb-0">附近靠谱师傅，一键拨号联系</p>
+    </header>
+
+    <!-- 中间模块：分类切换 -->
+    <section class="container my-3">
+        <div class="d-flex overflow-auto pb-2" id="categoryFilter">
+            <button class="btn btn-primary me-2 px-3 rounded-pill" onclick="filterData('全部')">全部</button>
+            <button class="btn btn-outline-primary me-2 px-3 rounded-pill" onclick="filterData('开锁')">开锁</button>
+            <button class="btn btn-outline-primary me-2 px-3 rounded-pill" onclick="filterData('下水道')">通下水道</button>
+            <button class="btn btn-outline-primary me-2 px-3 rounded-pill" onclick="filterData('电路')">修电路</button>
+        </div>
+
+    </section>
+
+    <!-- 下部内容：师傅卡片 -->
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-3" id="cardContainer">
+            <!-- 动态加载数据 -->
+        </div>
+    </main>
+    <div></div>
+    <section class="container mb-4">
+        <div class="row g-2">
+            <div class="col-6">
+                <a href="tel:138xxxxxxx" class="btn btn-outline-secondary w-100 py-2 shadow-sm">
+                    <i class="bi bi-person-badge"></i> 联系管理员
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="https://qq.com" target="_blank" class="btn btn-outline-primary w-100 py-2 shadow-sm">
+                    <i class="bi bi-pencil-square"></i> 师傅入驻登记
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 底部免责声明 -->
+    <footer class="container mt-5 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-warning">
+            <h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle-fill"></i> 免责声明</h6>
+            <p class="small text-secondary mb-0" style="line-height: 1.6;">
+                1. 本平台仅提供信息展示服务，所有师傅信息均由第三方提供，请用户自行核实身份及资质。<br>
+                2. 维修价格、服务质量由用户与师傅自行协商，平台不参与交易过程，亦不承担任何法律连带责任。<br>
+                3. 建议在服务前确认价格并留存凭证。如发生纠纷，请通过法律途径解决。
+            </p>
+        </div>
+        <div class="text-center mt-4 text-muted small">
+            <p>© 2026 作者 版权所有</p>
+        </div>
+    </footer>
+    
+    
+    <script src="main.js"></script>
+    <div class="sticky-bottom-bar shadow-lg">
+        <div class="container h-100">
+            <div class="row h-100 g-2 align-items-center">
+                <div class="col-6">
+                    <a href="tel:138xxxxxxxx" class="btn btn-dark w-100 rounded-pill">
+                        联系管理员
+                    </a>
+                </div>
+                <div class="col-6">
+                    <!-- 这里可以链接到你的登记表单 -->
+                    <a href="#" class="btn btn-primary w-100 rounded-pill">
+                        师傅登记入驻
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 给页面底部留出空白，防止悬浮条遮挡免责声明内容 -->
+<div style="height: 80px;"></div>
+</body>
+</html>
